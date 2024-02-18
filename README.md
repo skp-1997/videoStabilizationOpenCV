@@ -1,4 +1,6 @@
-Video Stabilization
+# Video Stabilization using Optical Flow
+
+This code is simple attempt to stabilize (smoothen) a video using just traditional computer vision techniques using OpenCV. It's not best but will surely help learn many small concepts in computer vision like feature detection, optical flow, transformation and warping.
 
 # Demonstration:
 
