@@ -48,7 +48,7 @@ To get the idea of how it smoothen the curve, here is the picturization.
 
 First, I use 'numpy.cumsum' to get trajectory for entire video, which later was used to smoothen the transformation using filtering.
 I am using 'MovingAverageFilter', the logic is defined below.
-
+<img width="615" alt="Screenshot 2024-02-17 at 8 25 22 PM" src="https://github.com/skp-1997/videoStabilizationOpenCV/assets/97504177/f048ea51-e11b-4f0f-aeb2-5743d9a1765b">
 
 
 The filter is applied trajectory matrix which smoothen values along translation along x, y and rotation along x direction. 
@@ -56,7 +56,7 @@ The filter is applied trajectory matrix which smoothen values along translation 
 ## [5] Warping using smoothen transformation matrix calculated before.
 
 Using 'cv2.warpAffine' to wrap consecutive frames from the filtered trajectory matrix.
-<img width="615" alt="Screenshot 2024-02-17 at 8 25 22 PM" src="https://github.com/skp-1997/videoStabilizationOpenCV/assets/97504177/f048ea51-e11b-4f0f-aeb2-5743d9a1765b">
+
 
 
 ## [6] Fixing the borders
